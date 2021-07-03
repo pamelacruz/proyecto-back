@@ -17,8 +17,10 @@ const setCurriculum = async(e) => {
         const data = await peticion.json();
         if (parseInt(data.status) > 0) {
             window.location.href = 'imagenes.html';
+        } else{
+            alert("Error al insertar los datos");
         }
-        alert("Error al insertar los datos");
+        
     } catch (error) {
         alert("error");
     }
