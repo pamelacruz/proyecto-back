@@ -1,4 +1,4 @@
-var endPoint = 'http://localhost:8888/servicio';
+var endPoint = 'http://regalosenmexico.com/servicio';
 
 const Logout = key => {
     localStorage.removeItem("id");
