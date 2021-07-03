@@ -19,8 +19,9 @@ const getUser = async(e) => {
             localStorage.setItem("menu", JSON.stringify(data.menu));
             localStorage.setItem("privilegios", data.privilegios);
             window.location.href = 'imagenes.html';
-        }
+        }else{
         alert(data.error);
+        }
     } catch (error) {
         alert("error");
     }
