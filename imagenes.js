@@ -57,7 +57,7 @@ const getInfo = async() => {
                 td.appendChild(txt);
                 tr.appendChild(td);
                 var txt = document.createElement("img");
-                txt.src = "http://localhost:8888/servicio/images/" + info[stock]['nombre'];
+                txt.src = endPoint + "/images/" + info[stock]['nombre'];
                 txt.width = "100";
                 var td = document.createElement("td");
                 td.appendChild(txt);
